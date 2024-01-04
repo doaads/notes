@@ -1,0 +1,30 @@
+#!/bin/zsh
+
+if [ "$#" -ne 3 ]; then
+	echo "Invalid number of arguments received ($#). 2 expected"
+	exit 1
+fi
+
+TYPE=$1
+SUBJECT=$2
+FILENAME=$3
+
+mkdir -p "$TYPE/$SUBJECT"
+
+if test -f "$TYPE/$SUBJECT.md"; then
+	echo "Subject exists"
+else
+	echo "[..](../notes.md)" > "$TYPE/$SUBJECT.md"
+	sed -i -e "\$a[$SUBJECT]($TYPE/$SUBJECT.md)" notes.md
+fi
+
+if test -f "$TYPE/$SUBJECT/$FILENAME.md"; then
+	echo "Note with this name already exists under the given subject."
+	exit 1
+fi
+
+echo "[..](../$SUBJECT.md)" > $TYPE/$SUBJECT/$FILENAME.md
+
+sed -i -e "\$a[$FILENAME]($SUBJECT/$FILENAME.md)" $TYPE/$SUBJECT.md
+
+nvim $TYPE/$SUBJECT/$FILENAME.md

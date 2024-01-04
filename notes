@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+cd ~/studia/notes
+nvim notes.md

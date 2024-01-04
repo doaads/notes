@@ -1,0 +1,22 @@
+#!/bin/zsh
+
+if [ "$#" -ne 3 ]; then
+	echo "Invalid number of arguments received ($#). 2 expected"
+	exit 1
+fi
+
+TYPE=$1
+SUBJECT=$2
+FILENAME=$3
+
+if ! test -f "$TYPE/$SUBJECT/$FILENAME.md"; then
+	echo "Note not found"
+	exit 1
+fi
+
+rm $TYPE/$SUBJECT/$FILENAME.md
+
+sed -i "/($SUBJECT\/$FILENAME.md)/d" 3s/$SUBJECT.md
+
+echo "Note deleted."
+exit 0
