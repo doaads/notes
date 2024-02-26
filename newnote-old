@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 if [ "$#" -ne 3 ]; then
-	echo "Invalid number of arguments received ($#). 3 expected"
+	echo "Invalid number of arguments received ($#). 2 expected"
 	exit 1
 fi
 
@@ -11,20 +11,11 @@ FILENAME=$3
 
 mkdir -p "$TYPE/$SUBJECT"
 
-# CREATE TYPE DIR AND SUMMARY
-if test -f "$TYPE/summary.md"; then
-	echo "Type exists"
-else
-	echo "[..](../notes.md)" > "$TYPE/summary.md"
-	sed -i -e "\$a[$TYPE]($TYPE/summary.md)" notes.md
-fi
-
-# CREATE SUBJECT FILE
 if test -f "$TYPE/$SUBJECT.md"; then
 	echo "Subject exists"
 else
-	echo "[..](summary.md)" > "$TYPE/$SUBJECT.md"
-	sed -i -e "\$a[$SUBJECT]($SUBJECT.md)" "$TYPE/summary.md"
+	echo "[..](../notes.md)" > "$TYPE/$SUBJECT.md"
+	sed -i -e "\$a[$SUBJECT]($TYPE/$SUBJECT.md)" notes.md
 fi
 
 if test -f "$TYPE/$SUBJECT/$FILENAME.md"; then

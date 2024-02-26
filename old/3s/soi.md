@@ -8,3 +8,5 @@
 [lab3raport](soi/lab3raport.md)
 [zad4](soi/zad4.md)
 [zad5](soi/zad5.md)
+[6zad](soi/6zad.md)
+[raport6](soi/raport6.md)

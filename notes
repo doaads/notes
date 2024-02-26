@@ -1,4 +1,14 @@
 #!/bin/zsh
 
 cd ~/studia/notes
-nvim notes.md
+
+if [ "$#" -ne 1 ]; then
+	nvim notes.md
+else
+	if [ ! -d $1 ]; then
+		echo "Directory not found"
+		exit 1
+	fi
+	nvim $1/summary.md
+fi
+

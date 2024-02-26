@@ -1,0 +1,163 @@
+{
+  "main": {
+    "id": "00c0dbd96b0326f7",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a2f611f7bff7bf5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d93c3c537ddd3d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "old/3s/wsi/lab2doc.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b3224715c59e0867",
+    "type": "split",
+    "children": [
+      {
+        "id": "59b39b1bca1bf551",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87ef71ea12b18612",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bc1174bc9a900c4a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "71a4ac46a544dd5c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "98a07955d869299a",
+    "type": "split",
+    "children": [
+      {
+        "id": "1abc478052590ff5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f79666a3859d66b7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "old/3s/wsi/lab2doc.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ab70c5cc5efde5e5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "old/3s/wsi/lab2doc.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d0c5b2e387106f65",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c253f9a4c398f9ad",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "old/3s/wsi/lab2doc.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0d93c3c537ddd3d3",
+  "lastOpenFiles": [
+    "old/3s/wsi/16.11.wyklad.md",
+    "old/3s/AI.md",
+    "4s/swo.md",
+    "old/3s/wsi.md",
+    "4s/summary.md",
+    "4s/bss.md",
+    "notes.md",
+    "README.md",
+    "3s/wsi/lab2doc.md",
+    "3s/soi.md"
+  ]
+}
