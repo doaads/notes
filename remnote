@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 if [ "$#" -ne 3 ]; then
 	echo "Invalid number of arguments received ($#). 2 expected"
@@ -16,7 +16,8 @@ fi
 
 rm $TYPE/$SUBJECT/$FILENAME.md
 
-sed -i "/($SUBJECT\/$FILENAME.md)/d" 3s/$SUBJECT.md
+# delete mention in subject summary
+sed -i "/($SUBJECT\/$FILENAME.md)/d" $TYPE/$SUBJECT.md
 
 echo "Note deleted."
 exit 0

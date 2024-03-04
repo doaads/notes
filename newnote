@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 if [ "$#" -ne 3 ]; then
 	echo "Invalid number of arguments received ($#). 3 expected"
